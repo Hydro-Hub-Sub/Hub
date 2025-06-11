@@ -5,7 +5,7 @@
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hydro-Hub-Sub/Hub/refs/heads/main/Main-Hydro-Hub", true))()
 
-wait(10)
+wait(5)
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/SpaceScriptHUB/petspawner/refs/heads/main/GrowaGardenVisual", true))()
 
@@ -31,7 +31,7 @@ label.Text = "✅ Dark Spawner Loaded! Please wait for the script to fully load 
 label.ZIndex = 10000
 label.Parent = gui
 
-wait(10)
+wait(5)
 gui:Destroy()
 
 --pcall(function() getgenv().IY_LOADED = true end)
