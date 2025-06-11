@@ -27,7 +27,7 @@ label.TextColor3 = Color3.fromRGB(255, 255, 255)
 label.TextStrokeTransparency = 0.6
 label.Font = Enum.Font.SourceSansBold
 label.TextSize = 24
-label.Text = "✅ Hydro Hub Loaded! Please wait for the script to fully load for the remaining resources!"
+label.Text = "✅ Dark Spawner Loaded! Please wait for the script to fully load for the remaining resources!"
 label.ZIndex = 10000
 label.Parent = gui
 
