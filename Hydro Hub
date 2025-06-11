@@ -9,23 +9,28 @@ wait(10)
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/SpaceScriptHUB/petspawner/refs/heads/main/GrowaGardenVisual", true))()
 
+local CoreGui = game:GetService("CoreGui")
+
 local gui = Instance.new("ScreenGui")
-gui.Name = "QuickReminder"
+gui.Name = "ReminderOverlay"
 gui.ResetOnSpawn = false
-gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+gui.IgnoreGuiInset = true
+gui.ZIndexBehavior = Enum.ZIndexBehavior.Global
+gui.Parent = CoreGui
 
 local label = Instance.new("TextLabel")
-label.Size = UDim2.new(0, 700, 0, 50)
-label.Position = UDim2.new(0.5, -350, 0.1, 0)
-label.BackgroundColor3 = Color3.new(0, 0, 0)
-label.BackgroundTransparency = 0.3
-label.TextColor3 = Color3.new(1, 1, 1)
-label.Text = "Hydro Hub Loaded! Please wait for the script to fully load for the remaining resources!"
-label.TextSize = 22
+label.Size = UDim2.new(0, 850, 0, 50)
+label.Position = UDim2.new(0.5, -425, 0.15, 0)
+label.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+label.BackgroundTransparency = 0.2
+label.TextColor3 = Color3.fromRGB(255, 255, 255)
+label.TextStrokeTransparency = 0.6
 label.Font = Enum.Font.SourceSansBold
+label.TextSize = 24
+label.Text = "✅ Hydro Hub Loaded! Please wait for the script to fully load for the remaining resources!"
+label.ZIndex = 10000
 label.Parent = gui
 
--- Optional: remove the text after 10 seconds
 wait(10)
 gui:Destroy()
 
