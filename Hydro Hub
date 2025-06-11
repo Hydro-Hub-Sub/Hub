@@ -3,15 +3,11 @@
 --    	return
 --	end
 
-pcall(function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Hydro-Hub-Sub/Hub/refs/heads/main/Main-Hydro-Hub", true))()
-end)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hydro-Hub-Sub/Hub/refs/heads/main/Main-Hydro-Hub", true))()
 
 wait(10)
 
-pcall(function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/SpaceScriptHUB/petspawner/refs/heads/main/GrowaGardenVisual", true))()
-end)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SpaceScriptHUB/petspawner/refs/heads/main/GrowaGardenVisual", true))()
 
 --pcall(function() getgenv().IY_LOADED = true end)
 
