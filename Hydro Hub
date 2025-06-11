@@ -31,7 +31,7 @@ label.Text = "✅ Dark Spawner Loaded! Please wait for the script to fully load 
 label.ZIndex = 10000
 label.Parent = gui
 
-wait(5)
+wait(12)
 gui:Destroy()
 
 --pcall(function() getgenv().IY_LOADED = true end)
